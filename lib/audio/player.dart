@@ -46,4 +46,8 @@ class Player extends BaseAudio {
       await stop();
     }
   }
+
+  release() async {
+    await _player?.release();
+  }
 }

@@ -69,6 +69,13 @@ class _InitialScreenState extends State<InitialScreen> {
   }
 
   @override
+  void dispose() {
+    super.dispose();
+
+    _player.release();
+  }
+
+  @override
   void didChangeDependencies() {
     super.didChangeDependencies();
 
